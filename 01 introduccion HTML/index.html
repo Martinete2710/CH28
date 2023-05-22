@@ -1,0 +1,100 @@
+<!DOCTYPE html> <!--declaracion del tipo de documento y ayuda a los navegadores a mostrar correctamente la paguina-->
+<html lang="en"><!--se le conoce como elemento raiz  lang es de lengua y es es el elemento que le corresponde a español-->
+<head> <!--actua como contenedor de todo lo que se desea incluir en la paguina html que no es visible por los usuarios,palabras clave, metadatos, vinculos etc..-->
+    <meta charset="UTF-8"> <!---->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paguina web CH28 Reyes Espino </title><!-- es el nombre de la paguina--></head>
+<body>
+    <!-- <nombre de la equiqueta> el contenido ......</cierre de la etiqueta>-->
+        <p>hola soy un parrafo</p><!--etiqueta de parrafo-->
+        <!-- etiquetas de cabecera abajo cambian tamaño -->
+        <!-- <h1>soy una etiqueta h1</h1>
+        <h2>soy una etiqueta h2</h2>
+        <h3>soy una etiqueta h3</h3>
+        <h4>soy una etiqueta h4</h4>
+        <h5>soy una etiqueta h5</h5>
+        <h6>soy una etiqueta h6</h6> -->
+        <p>
+            hola mi nombre es martn reyes y <b><i><mark>soy un hombre libre autentico y responsable<mark></i></b>, estoy aprendiendo a ser un desarrollador java full stack, me gusta mucho escuchar musica y salir a caminar a la naturaleza.</p><p>
+        tengo <u>dos perrijos que son los responsables de mi estabilidad emocional</u> en los ultimos dias :D
+        </p>
+        <p>
+            <strong> ingenieria geofisica</strong> y trabaje dos años en el ambito <em> mucho de la materia asi como viajando por todo el pais</em> es un trabajo increible. me especialice en la busqueda de H<sub>2</sub>0 con una formula que se eleva mucho como r<sup>2</sup>. <del>FIN</del>
+        </p>
+        
+    <!--  
+        elementos de formato 
+        <b></b> formato de texto en negritas
+        <i></i> texto en letra cursiva
+        <mark></mark> texto marcado o resaltado
+        <u></u> formato de subrayado
+        <sub></sub> subindice 
+        <sup></sup> super indice 
+        <del></del> permite tachar el texto
+        <blockquote></blockquote> permite crear citas de texto 
+        <strong></strong> Texto importante
+        <em></em> Texto enfatizado 
+    -->
+    <blockquote cite="https://www.google.com/search?client=firefox-b-d&q=cita"><!--cite es para agregar el link donde proviene ese texto--
+        <p>
+            esta etiqueta nos permite citar un texto dentro de nuestro documento html, proporciona un mecanismo para insertar  signos de puntuacion de citas antes 
+        </p>
+    </blockquote>
+    <!--
+       <hr> nos sirve para separar textos con una linea 
+       <br> sirve para hacer una separacion entfe parrafos  veremos un salto de linea que utilizaremos como separador 
+
+    -->
+    <h3>Atributos de HTML</h3>
+<!--Los atributos de HTML proporcionan onformacion sobre elementos de HTML, todos los elementos pueden tener atributoss los atributos siempre se especifican en la etiqueta de inicio 
+vienen en pares de nombre: nombre="valor"-->
+<!--ATRINNUTOS GLOBALES: se  pueden aplicar a todos los elementos del documento y no dependen de la etiqueta
+    class: identificar un conjunto de elementos por ejemplo :<div class="clase1"></div>
+    id  : se usa para especificar un identificador unico para un elemnto por ejemplo <div id="id1></div>"
+    style: se usa para especificar una propiedad de estilos que se aplicaran al aelemento por ejemplo <h1 style="color:red;"> hola </h1>
+    event: se usa para especificar un evento que se ejecutara en un elemnto
+    hidden :se usa para ocultar un elementopor ejemplo  hidden ="hidden"
+-->
+    <p style="color: darkgoldenrod;">
+    
+        hola mi nombre es martn reyes y <b><i><mark>soy un hombre libre autentico y responsable<mark></i></b>, estoy aprendiendo a ser un desarrollador java full stack, me gusta mucho escuchar musica y salir a caminar a la naturaleza.
+    </p>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <!-- align="?"    alinear textos-->
+    <p align="center"> hola mi nombre es martn reyes y <b><i><mark>soy un hombre libre autentico y responsable<mark></i></b>, estoy aprendiendo a ser un desarrollador java full stack, me gusta mucho escuchar musica y salir a caminar a la naturaleza.
+     </p>
+     <p align="right">hola mi nombre es martn reyes y <b><i><mark>soy un hombre libre autentico y responsable<mark></i></b>, estoy aprendiendo a ser un desarrollador java full stack, me gusta mucho escuchar musica y salir a caminar a la naturaleza.</p>
+     <p align="left">hola mi nombre es martn reyes y <b><i><mark>soy un hombre libre autentico y responsable<mark></i></b>, estoy aprendiendo a ser un desarrollador java full stack, me gusta mucho escuchar musica y salir a caminar a la naturaleza.</p>
+     <p align="justify">hola mi nombre es martn reyes y <b><i><mark>soy un hombre libre autentico y responsable<mark></i></b>, estoy aprendiendo a ser un desarrollador java full stack, me gusta mucho escuchar musica y salir a caminar a la naturaleza.</p>
+
+    <h3> ETIQUETAS DE ENLACES </h3>
+    <!--Los enlaces nos permiten la navegacion por medio de los hipervinculos links que realizan una coneccion y referencian otros archivos o paguias web dentro de la aplicacion o externa a la misma.
+    
+    para los enlaces se utiliza la etiqueta "anchor" (ancla) y se represeta con una <a></a>
+    los principales atributos de anchor son 
+    -href: nos permite fdefinir la ubicacion de la paguina a la cual nos vamos a anclar puede ser una url externa o un archivo de nuestro proyecto 
+    -_blank: nos permite abrir el enlace en una nueva ventana 
+    -_self: abre el enlace en la misma ventana  (valor por default)
+    RUTAS ABSOLUTAS: son aquellas que definen la ubicacion completa de un archivo o una paguina web por ejemplo links 
+    RUTAS RELATIVAS: son las que se definen apartir de la posicio en la estructura local en la paguina que lo esta refiriendo es decir solo indica el orden de directorios por ejemplo: /asset/img/tamalito.jpg
+    -->
+    <br>
+    <br>
+    <a href="https://www.youtube.com/">mira la paguina de youtube</a>
+    <br>
+    <br>
+    <a href="https://www.youtube.com/watch?v=hjomoenACgg&ab_channel=Miguelsilvadj" target="_blank">mira este video de dread mari</a>
+    <br>
+    <br>
+    <a href="mailto: Martinreyese27@gmail.com">presiona aqui para enviar un correo</a>
+    <br>
+    <br>
+    <a href="/assets/images/perro_con_lentes.jpg" download> te gustan los perritos con lentes</a>
+
+</body>
+</html>
