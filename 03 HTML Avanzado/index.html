@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03 HTML AVANZADO</title>
+    <link rel="stylesheet" href="/03 HTML Avanzado/styles/styles.css">
+
+</head>
+<body>
+    <!--
+        ***************TABLAS EN HTML******************
+        una tabla es un conjunto de filas y columnas que contienen informacion necesaria. nos sirve para organizar y tener una mejor visibilidad de los elementos.
+
+        ***celda*** es la interseccion entre una fila y columna que contiene informacion necesaria
+        en html deifnimos la celda  utilizando la etiqueta <td></td>
+
+        ***filas*** las filas se definen como <tr></tr>
+
+        ***encabezado de tabla***  el titulo que tiene la informacion que vamos a tener en la tabla <th></th>
+
+        para iniciar una tabla en HTML, se define la etiueta <table></table> y se divide en dos 
+        -cabeza de la tabla<thead></thead>
+        cuerpo de la tabla <tbody></tbody>
+    -->
+    <h3>TABLA DE PERSONAS</h3>
+    <table>
+        <thead>
+            <tr><!--fila 1-->
+                <th>NAME</th>
+                <th>EDAD</th>
+                <th>PAIS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>MARTIN REYES</td>
+                <td>27 AÑOS</td>
+                <td>MEXICO</td>
+            </tr><!--fila 2-->
+            <tr>
+                <td>PAULINA ENSASTIGA</td>
+                <td>19 AÑOS</td>
+                <td>PORTUGAL</td>
+            </tr><!--fila 3-->
+            <tr>
+                <td>DANIEL CORONA</td>
+                <td>26 AÑOS</td>
+                <td>RUSIA</td>
+            </tr><!--fila 4-->
+        </tbody>
+    </table>
+    <br><hr>
+    <!-- TABLA2
+    crear una tabla donde muestres el nombre y el apellido del entrenador y su pokemon base
+    -->
+    <!-- TITULO DE TABLA
+    para agregar una titulo a la tabla utilizaremos la etiqueta <caption>-->
+    <table>
+        <caption>MAESTROS POKEMON</caption>
+        <thead>
+            <tr>
+                <th>nombre</th>
+                <th>apellido</th>
+                <th>pokemon</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr><!--maestro 1-->
+                <td>osvaldo </td>
+                <td>morales</td>
+                <td><a href="https://www.pokemon.com/el/pokedex/totodile" target="_blank">totodaile</a></td>
+            </tr>
+            <tr><!--maestro 2-->
+                <td>nancy</td>
+                <td>perez</td>
+                <td>moltres<br><img id="moltres" src="/03 HTML Avanzado/assets/moltres.png"</td>
+            </tr>
+            <tr><!--maestro 3-->
+                <td>hiram</td>
+                <td>navarro</td>
+                <td>mew</td>
+            </tr>
+            <tr><!--maestro 4-->
+                <td>kevin</td>
+                <td>Gonalez</td>
+                <td>mewtow</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><hr><br><hr>
+ <!--diseña un horario de clases de lunes a viernes con 3 horarios de (8-9, 9-10, 10-11) con las materias que gustes
+            agrega estilos para que el horario se vea bien-->
+            <table id="table1">
+                <caption id="caption1">HORARIO POKEMON</caption>
+                <thead id="thead1">
+                    <tr>
+                        <th>LUNES</th>
+                        <th>MARTES</th>
+                        <th>MIERCOLES</th>
+                        <th>JUEVES</th>
+                        <th>VIERNES</th>
+                    </tr>
+        
+                </thead>
+                <tbody id="tbody1">
+                    <tr><!--maestro 1-->
+                        <td>8:00-9:00 </td>
+                        <td>pokemagia</td>
+                        <td><a href="https://www.pokemon.com/el/pokedex/totodile" target="_blank">principios de totodail</a></td>
+                        <td>kiobule con las misiones</td>
+                        <td>pesca con caña vieja</td>
+                    </tr>
+                    <tr><!--maestro 2-->
+                        <td>9:00-10:00</td>
+                        <td>como atrapar tu primer pokemon</td>
+                        <td>habilidades de moltres<br><img id="moltres" src="/03 HTML Avanzado/assets/moltres.png" </td>
+                        <td>pikachu avanzado</td>
+                        <td>greninja en las hierbas</td>
+                    </tr>
+                    <tr><!--maestro 4-->
+                        <td>10:00-11:00</td>
+                        <td>educacion fisicca</td>
+                        <td>quibule con el sat</td>
+                        <td>pokebolas</td>
+                        <td> posicones</td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+    
+</body>
+</html>

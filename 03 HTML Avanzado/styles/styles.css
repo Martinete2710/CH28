@@ -1,0 +1,29 @@
+table,th, td{
+    border: 1px solid rgb(94, 5, 172);
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table{
+    width: 300px;;
+    /* height: 200px;
+     */
+}
+a{
+    text-decoration: none;
+}
+#moltres{
+    width: 50px;
+}
+#caption1{
+    background-color: chartreuse;
+}
+#tbody1{ 
+    background-color: rgb(10, 115, 156);
+}
+#table1{
+    width: 600px;
+}
+#thead1{
+    background-color: yellow;
+}
