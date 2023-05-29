@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>03 HTML AVANZADO</title>
-    <link rel="stylesheet" href="/03 HTML Avanzado/styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 
 </head>
 <body>
@@ -24,7 +24,7 @@
         -cabeza de la tabla<thead></thead>
         cuerpo de la tabla <tbody></tbody>
     -->
-    <h3>TABLA DE PERSONAS</h3>
+    <h3>TABLA DE PERSONAS  </h3>
     <table>
         <thead>
             <tr><!--fila 1-->
@@ -106,30 +106,165 @@
         
                 </thead>
                 <tbody id="tbody1">
-                    <tr><!--maestro 1-->
+                    <tr>
                         <td>8:00-9:00 </td>
                         <td>pokemagia</td>
                         <td><a href="https://www.pokemon.com/el/pokedex/totodile" target="_blank">principios de totodail</a></td>
                         <td>kiobule con las misiones</td>
                         <td>pesca con caña vieja</td>
                     </tr>
-                    <tr><!--maestro 2-->
+                    <tr>
                         <td>9:00-10:00</td>
                         <td>como atrapar tu primer pokemon</td>
                         <td>habilidades de moltres<br><img id="moltres" src="/03 HTML Avanzado/assets/moltres.png" </td>
                         <td>pikachu avanzado</td>
                         <td>greninja en las hierbas</td>
                     </tr>
-                    <tr><!--maestro 4-->
+                    <tr>
                         <td>10:00-11:00</td>
                         <td>educacion fisicca</td>
                         <td>quibule con el sat</td>
                         <td>pokebolas</td>
                         <td> posicones</td>
-                        
                     </tr>
                 </tbody>
-            </table>
+            </table>   
+        <!--
+            ****************VINCULOS HTML******************
+        crear marcadores en HTML.
+        los marcadores son utiles cuando tenemos una paguina web muy larga. para crear un marcador sigue los sigguiente pasos
+        1.- crear el marcador y agregar un enlace
+        2.- identificar un atributo para el marcador (id)
+
+        -->
+       <a href="#parrafito3">parrafito3</a> 
+       <br>
+       <a href="./html/login.html">inicia secion</a>
+        <p id="parrafito1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, ex ipsam placeat saepe accusantium mollitia quidem, accusamus autem eius dolor a voluptatibus debitis veritatis iusto esse enim necessitatibus voluptate vitae!</p>
+    <br>
+
+        <p id="parrafito2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, ex ipsam placeat saepe accusantium mollitia quidem, accusamus autem eius dolor a voluptatibus debitis veritatis iusto esse enim necessitatibus voluptate vitae!</p>
+    <br>
+        <p id="parrafito3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, ex ipsam placeat saepe accusantium mollitia quidem, accusamus autem eius dolor a voluptatibus debitis veritatis iusto esse enim necessitatibus voluptate vitae!</p>
+    <br> <br> <br> <br>
+    <hr>
+    <!--***********FORMULARIO DE HTML******************
+    es un elemento que se encarga de recopilar informacion del usuario para enviarlo a un servidos y uiilizarlo para su procesamiento.
     
+---- elementos de un formulario
+<form></form> se utilizan para crear un formulario html para la entrada de un usuario.
+
+----diferentes tipo de entrada 
+como campos de texto, casillas de verificacion, botones de opcion, botones de envio, etc.
+
+-----------label: define una etiqueta para formularios y es util para los usuarios de lectores de pantalla, cuando el uisuario hace click en el texto dentro del elemento <label> alterna el boton de opcion/casilla de verificacion
+    ----------for: debe ser igual al atributo id del elemento <input> para unirlos
+    ---------input: es ele elemento de formulario mas utilizado y se puede utilizar segun el atributo 
+    type: 
+    -text.- permite ingresar texto
+    pasweord.- permite introducir una contraseña y ocultar la informacion
+    -->
+    <form action="">
+        <label for="user">ingresa tu usuario</label>
+        <input id="user" type="text" name="user">
+    </form>
+    <br><hr>
+
+    <form>
+        <label for="password">ingresa tu contraseña</label>
+        <input id="password" type="password" name="password">
+        <br><br><hr><!--tipo numerico para eleguir numeros se pueden definir valores minimos"min" y valores maximos "max"-->
+        <label for="edad">escribe tu edad</label>
+        <input id="edad" type="number" name="edad" min="18" max="22">
+
+        <br><br><hr><!-- para introducir correo solicita uso de  @para ecribir-->
+        <label for="correo">escribe tu correo</label>
+        <input id="correo" type="email" name="correo">
+
+        <br><br><hr>
+        <label for="comentarios">escribe tu comentario</label>
+        <textarea id="comentarios" name="comentarios" placeholder="hasta 150 palabras"></textarea>
+            
+        <br><br><hr>
+        <label for="nacimiento">slecciona tu fecha de nacimiento</label>
+        <input type="date" id="nacimiento" name="nacimiento">
+
+        <br> <hr> <!-- radio define un boton de opcion permite al usuario seleccionar solamente una opcion de un numero de opciones-->
+        <p>eligue tu lenguaje de programacion favorito</p>
+        <input type="radio" id="java"  name="lenguaje-fav" value="java">
+        <label for="java">JAVA</label>
+        <input type="radio" id="java script"  name="lenguaje-fav" value="java script">
+        <label for="java script">JAVASCRIPT</label>
+        <input type="radio" id="PYTHON"  name="lenguaje-fav" value="PYTHON">
+        <label for="PYTHON">PYTHON</label>
+        
+        <br><br><!--  checkbox  define una casilla de verificacion donde el ususario puede seleccionar cero o mas opciones -->
+        <p>eligue el idioma que dominas</p>
+        <input type="checkbox" id="idioma1" name="idioma1 " value="ingles">
+        <label for="idioma1">ingles</label>
+        <br>
+        <input type="checkbox" id="idioma2" name="idioma2 " value="español">
+        <label for="idioma2">español</label>
+        <br>
+        <input type="checkbox" id="idioma3" name="idioma3 " value="frances">
+        <label for="idioma3">frances</label>
+        
+        <br><br><!--  file es un campode seleccion de archivos y un boton"examinar" que permite cargar archivos -->
+        <label for="ARCHIVO">AGREGA TU ARCHIVO</label>
+       <input type="file" id="ARCHIVO" name="ARCHIVO">
+     </form>
+
+     <!--
+        ********************************BOTONES*****************************
+        Permiten controlar el envio de ifnormaicon del usuario el type=submint envia al servidor lo que se escribe 
+        el type="reset" permite resetear la informacion contrenida en el formulario
+     -->
+
+     <!--diseñar un formulario de registro para una paguina de videojuegos
+    -nombre
+    -apellido
+    -nombre de usuario
+    -correo
+    -contraseña
+    -edad
+    TODOS LOS CAMPOS DEBEN SER OBLIGATORIOS
+    required en input
+
+    -->
+    <br><br><br> <!-- cuando el atributo acccion esta en blanco la solicitud se enviara a la misma paguina-->
+     <form action="/action_page.php" method="get" target="_blank" class="videojuegos">
+    <h2 id="parrafov">PAGUINA DE REGISTRO PARA VIDEOJUEGOS</h2>
+        <label for="user">ingresa tu nombre</label>
+        <input class="cuadros" id="user" type="text" name="user" required>
+        <br><br><hr>
+        <label for="user">ingresa tu apellido</label>
+        <input class="cuadros" id="user" type="text" name="user" required>
+        <br><br><hr>
+        <label for="user">NICKNAME</label>
+        <input class="cuadros" id="user" type="text" name="user" required>
+        <br><br><hr>
+        <label for="correo">escribe tu correo</label>
+        <input class="cuadros" id="correo" type="email" name="correo" required>
+        <br><br><hr>
+        <label for="nacimiento">slecciona tu fecha de nacimiento</label>
+        <input class="cuadros" type="date" id="nacimiento" name="nacimiento" required>
+        <br><br><hr>
+        <label for="password">ingresa tu contraseña</label>
+        <input class="cuadros" id="password" type="password" name="password" required>
+        <br><br><hr>
+        <button type="submit">registrarse</button> <button type="reset">limpiar formulario</button>
+        <hr>
+     </form>
+<!-- 
+    boton enviar tyoe submit
+    define un boton para envir los datos del formularoa un controlador de formiulario, el controlador de formulario suele ser  un archivo con un script para procesar los datos de entrada.
+    El controlador del formulario se especifica en el atributo action del formulario
+    }
+
+    para envio es tipo post para enviar los datos al servidos 
+     y para corroborar es tipo get
+     
+
+-->
 </body>
 </html>

@@ -27,3 +27,17 @@ a{
 #thead1{
     background-color: yellow;
 }
+.videojuegos{
+    color: aliceblue;
+margin-left: 200px;
+margin-right: 400px;
+border-radius: 10px;
+background-color: rgb(110, 77, 141);
+}
+.cuadros{
+    background-color:chartreuse;
+}
+#parrafov{
+    margin-left: 100px;
+    color: coral;
+    
