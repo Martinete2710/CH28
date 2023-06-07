@@ -1,0 +1,44 @@
+:root{
+    --primary:#F7F1E5;
+    --secondary:#E7B10A;
+    --info: #898121;
+    --contrast: #4C4B16;
+}
+body{
+    margin: 0;
+    font-family: 'karla', sans-serif;
+    background-color: var(--secondary);
+}
+.container{
+    height: 1500px;
+    
+}
+
+div{
+    color: var(--contrast);
+    background-color: var(--primary);
+    padding: 10px 0px 10px 0px; /* es para el tamaño */
+    border: 5px solid var(--contrast);
+}
+.static{
+    position: static;
+}
+.relative{
+    background-color: var(--info);
+    position: relative;
+    top: 20px; left: 50px; 
+    color: var(--primary);
+}
+.fixed{   /*coloca el elemento a partir del viewport y con las dimenciones del ytecto*/
+    position: fixed;
+    right: 0px;
+    bottom: 10px;
+}
+.absolute{
+    position: absolute;
+}
+.sticky{
+    position: sticky;
+    top: 0px;
+    
+}

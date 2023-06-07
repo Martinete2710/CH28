@@ -1,0 +1,21 @@
+.grid{
+    display: grid;
+    /* grid-template-columns: auto auto auto;para dar columnas cada auto es una columna igual puedo poner los px de cada columna */
+    gap: 20px;/*para separarlo*/
+    /* grid-template-columns: repeat(2,1); */
+    /* grid: auto-flow / 50px 100px */
+    /* grid-template-columns: repeat(3, 80px);lo mismo que escribir 3 veces auto */
+    /* grid-template-rows: auto auto auto; para vertical */
+    height: 400px;/*altura del bloque*/
+    align-content:center;/*alinear con respecto a la vertical*/
+    /* justify-content: start, end, center;  para ponberlo en una ubicacion con respecto al blocke entero ya no se usa align si no este */
+    justify-content:center;
+}
+.grid>div{
+    text-align: center;
+    border: 3px solid var(--contrast);
+}
+
+.item1{
+   grid-column: 2/3;
+}

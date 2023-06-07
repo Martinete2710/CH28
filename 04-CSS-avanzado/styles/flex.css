@@ -1,0 +1,25 @@
+.flex{
+    display: flex;
+    height: 400px;/*tamaño vertical*/
+    justify-content: space-evenly;/*es la funcion de  justificar contenido para posicionarla en donde queremos*/
+    /* justify-content: space-evenly; */
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    align-items: center; /* alinea con respecto a la vertical del tamaño del div*/
+    /* flex-wrap: wrap; cuando termina el espacio horizontal lo pasa al de abajo */
+    background-color: rgb(196, 89, 169);
+    /* flex-direction:column; */
+    flex-flow: column wrap;  /*seria lo mismo que hacer el wrap y el column de arriba en una sola linea*/
+}
+.flex>div{
+    width: 100px;
+    margin: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 3px solid rgb(222, 220, 223);
+    background-color: cadetblue;
+}
+#div6{
+    order:0;
+}
